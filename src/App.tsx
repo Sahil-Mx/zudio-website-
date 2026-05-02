@@ -5,24 +5,24 @@
 
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import CategoryTiles from './components/CategoryTiles';
-import TrendingProducts from './components/TrendingProducts';
-import FlashSaleStrip from './components/FlashSaleStrip';
+import MenuCards from './components/MenuCards';
+import DealsStrip from './components/DealsStrip';
+import LoyaltyPromo from './components/LoyaltyPromo';
 import SocialProof from './components/SocialProof';
-import EmailCapture from './components/EmailCapture';
+import StoreLocator from './components/StoreLocator';
 import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50">
       <Navbar />
       <main>
         <Hero />
-        <CategoryTiles />
-        <TrendingProducts />
-        <FlashSaleStrip />
+        <DealsStrip />
+        <MenuCards />
+        <LoyaltyPromo />
         <SocialProof />
-        <EmailCapture />
+        <StoreLocator />
       </main>
       <Footer />
     </div>
