@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand: #0a0a0a;
+  --color-accent: #00FF00; /* Brutalist vibe from Recipe 5, or maybe a more classic blue? Let's go with a modern crisp blue #0066FF */
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-brand selection:bg-accent/30;
+  }
+}
+
